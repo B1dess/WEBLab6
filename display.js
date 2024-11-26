@@ -1,4 +1,4 @@
-﻿const SERVER_URL = "weblab6-backend-production.up.railway.app"
+﻿const SERVER_URL = "https://weblab6-backend-production.up.railway.app"
 
 async function fetchTabs() {
     const response = await fetch(`${SERVER_URL}/load-tabs`);
