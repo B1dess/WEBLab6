@@ -1,0 +1,188 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container-body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container-column{
+    flex: 10 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container-row{
+    flex: 10 0 0;
+    display: flex;
+    flex-direction: row;
+}
+
+h1{
+    background-color: white;
+}
+
+.div1, .div2, .div3, .div4, .div5, .div6{
+    border: black solid 1px;
+    display: flex;
+    word-break: break-word;
+}
+
+ul, ol{
+    padding-left: 25px;
+}
+
+.div1{
+    flex-direction: column;
+    padding: 5px;
+    flex: 2.5 0 0;
+    font-size: 26px;
+    background-color: bisque;
+}
+.div2{
+    flex: 2.5 0 0;
+    padding-right: 20px;
+    justify-content: right;
+    align-items: center;
+    background-color: lightsteelblue;
+}
+.div3{
+    font-size: 45px;
+    justify-content: center;
+    flex: 1.25 0 0;
+    background-color: darkseagreen;
+}
+
+.espada-img{
+    margin:auto;
+    width: 15vw;
+    height: auto;
+}
+
+.starrk-img{
+    margin:auto;
+    width: 15vw;
+    height: auto;
+}
+
+.barragan-img{
+    margin:auto;
+    width: 21vw;
+    height: auto;
+}
+
+.harribel-img{
+    margin:auto;
+    width: 19vw;
+    height: auto;
+}
+
+.ulquiorra-img{
+    width: 17vw;
+    height: auto;
+}
+.div4{
+    flex-direction: column;
+    padding: 5px;
+    flex: 4 0 0;
+    font-size: 20px;
+    background-color: darkseagreen;
+}
+
+.espada{
+    aspect-ratio: 2/1;
+    height:100%;
+    width:100%;
+}
+
+.div5{
+    flex: 8 0 0;
+}
+.div6{
+    flex: 2 0 0;
+    padding-left: 20px;
+    justify-content: left;
+    align-items: center;
+    background-color: lightsteelblue;
+}
+
+.tabs-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px; /* Відступ між кнопками та контентом */
+}
+
+.tabs-buttons button {
+    padding: 10px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+
+.tabs-buttons button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Стилі для контенту вкладок */
+.tabs-content .tab-content {
+    display: none; /* За замовчуванням весь контент прихований */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .flex-container-row {
+        flex-direction: column;
+    }
+
+    .div1 {
+        font-size: 20px;
+    }
+
+    .div2 {
+        font-size: 18px;
+    }
+
+    .div3 {
+        font-size: 35px;
+    }
+
+    .div4 {
+        font-size: 18px;
+    }
+
+    .espada-img {
+        width: 30vw;
+    }
+
+    .div6 h1 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .div1 {
+        font-size: 16px;
+    }
+
+    .div3 {
+        font-size: 30px;
+    }
+
+    .espada-img {
+        width: 50vw;
+    }
+
+    .div6 h1 {
+        font-size: 16px;
+    }
+}
