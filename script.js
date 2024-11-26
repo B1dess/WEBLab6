@@ -1,5 +1,5 @@
 ﻿let tabs = [];
-const SERVER_URL = "http://0.0.0.0:5000"
+const SERVER_URL = "weblab6-backend-production.up.railway.app"
 
 function generateTabs() {
     const tabCount = document.getElementById("tabCount").value;
