@@ -85,4 +85,4 @@ if (savedTabs) {
     fetchTabs();
 }
 
-setInterval(fetchTabs, 2000);
+setInterval(fetchTabs, 10000);
